@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Search User</title>
+</head>
+<body>
+    <h1>Search form</h1>
+    <form action="/search" method="get">
+        FIO: <input name="fio"><br>
+        <input type="submit" value="Search">
+    </form>
+
+    <h1>Jsp search form</h1>
+    <form action="/jspSearch" method="get">
+        FIO: <input name="fio"><br>
+        <input type="submit" value="Search">
+    </form>
+
+    <h1>Criteria form</h1>
+    <form action="/criteria" method="post">
+        Search by:<br>
+        name <input type="radio" name="choose" value="name" checked>
+        id <input type="radio" name="choose" value="id"> <br>
+
+        FIO: <input name="fio"><br>
+        From Id <input name="fromId"><br>
+        To Id <input name="toId"><br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
