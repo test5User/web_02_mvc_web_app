@@ -18,7 +18,7 @@ public class ConnectionManager {
 
     public static Connection getConnection() throws SQLException {
         if (Objects.isNull(cn) || cn.isClosed()) {
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/po_2301", "root", "");
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/po_2301", "root", "");
         }
         return cn;
     }
